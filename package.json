@@ -1,0 +1,27 @@
+{
+  "name": "hippeys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "layout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./style.css -o ./tailwind.css",
+    "watch:css": "npx @tailwindcss/cli -i ./style.css -o ./tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemiilorya/hippeys.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gemiilorya/hippeys/issues"
+  },
+  "homepage": "https://github.com/gemiilorya/hippeys#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "tailwindcss": "^4.3.5"
+  }
+}

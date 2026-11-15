@@ -4,30 +4,43 @@ class MainLayout extends HTMLElement {
 
         this.innerHTML = `
             <header>
-                <nav class="navbar flex flex-col items-center justify-center gap-3">
-                    <div class="top-bar flex text-center mt-5">
-                        <h4 class="text-xl">Call 717-336-6577</h4>
-                        <h4 class="text-xl">Contact</h4>
+                <nav id="navbar" class="top-0 left-0 z-50 w-full bg-transparent transition-colors duration-300 ease-in-out flex flex-col items-center justify-center gap-3 mb-3">
+                    <div class="top-bar flex text-lg text-center mt-5 gap-5">
+                        <h4>Call 717-336-6577</h4>
+                        <h4>Contact</h4>
                     </div>
-                    <div class="bot-bar">
-                        <div class="logo">
-                            <img src="" alt="">
+                    <div class="bot-bar flex items-center justify-center gap-5">
+                        <a href="/" class="logo text-2xl font-bold">
+                            LOGO
+                        </a>
+                        <div class="menu flex text-center gap-5 text-lg">
+                            <a href="#our-story">
+                                <h3 class="">Our Story</h3>
+                            </a>
+                            <a href="#how-we-make-it">
+                                <h3>How We Make It</h3>
+                            </a>
+                            <a href="#our-meats">
+                                <h3>Our Meats</h3>
+                            </a>
+                            <a href="#recipes">
+                                <h3>Recipes</h3>
+                            </a>
+                            <a href="#for-retailers">
+                                <h3>For Retailers</h3>
+                            </a>
                         </div>
-                        <div class="menu flex text-center gap-5 text-2xl">
-                            <h3 class="">Our Story</h3>
-                            <h3>How We Make It</h3>
-                            <h3>Our Meats</h3>
-                            <h3>Recipes</h3>
-                            <h3>For Retailers</h3>
-                        </div>
+                        <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                            Where to Buy
+                        </a>
                     </div>
                 </nav>
             </header>
             <main class="flex-1">
             ${pageContent}
             </main>
-            <footer class="flex flex-col items-center justify-center gap-5">
-                <div class="flex gap-10">
+            <footer class="bg-primary text-white flex flex-col items-center justify-center gap-5">
+                <div class="flex gap-20 mt-3">
                     <div class="col-1 flex flex-col">
                         <div class="logo">
                             <img src="" alt="">
@@ -54,13 +67,27 @@ class MainLayout extends HTMLElement {
                     </div>
                     <div class="col-3 flex flex-col">
                         <h3 class="text-lg font-bold">Explore:</h3>
-                        <p class="text-lg">Where to Buy</p>
-                        <p class="text-lg">Factory Sale</p>
-                        <p class="text-lg">Recipes</p>
-                        <p class="text-lg">FAQs</p>
-                        <p class="text-lg">Blog</p>
-                        <p class="text-lg">Reviews</p>
-                        <p class="text-lg">For Retailers</p>
+                        <a href="">
+                            <p class="text-lg">Where to Buy</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Factory Sale</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Recipes</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">FAQs</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Blog</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Reviews</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">For Retailers</p>
+                        </a>
                     </div>
                     <div class="col-4 flex flex-col">
                         <h3 class="text-lg font-bold">Areas we serve:</h3>
@@ -86,19 +113,31 @@ class MainLayout extends HTMLElement {
                 </div>
                 <div class="flex flex-col items-center justify-center gap-10">
                     <div class="bot-line text-center flex gap-5">
-                        <p class="text-lg">© 2026 Denver Meat Co.</p>
-                        <p class="text-lg">Privacy Policy</p>
-                        <p class="text-lg">Cookie Policy</p>
-                        <p class="text-lg">Facebook</p>
-                        <p class="text-lg">Instagram</p>
-                        <p class="text-lg">#ILoveHippeys</p>
+                        <a href="">
+                            <p class="text-lg">© 2026 Denver Meat Co.</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Privacy Policy</p>
+                        </a> 
+                        <a href="">
+                            <p class="text-lg">Cookie Policy</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Facebook</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">Instagram</p>
+                        </a>
+                        <a href="">
+                            <p class="text-lg">#ILoveHippeys</p>
+                        </a>
                     </div>
                     <div class="foot-sign-up flex gap-10 items-center">
                         <div class="flex gap-3">
                             <p class="text-lg">Hear about the next factory sale first:</p>
                             <input type="text" placeholder="Enter your email">
                         </div>
-                        <button class="bg-blue-900 text-white text-lg px-4 py-2">
+                        <button class="bg-accent text-text text-lg px-4 py-2">
                             Notify Me
                         </button>
                     </div>

@@ -3,25 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="layout.js" defer></script>
+    <!-- <script src="navbar.js" defer></script> -->
+    <link rel="stylesheet" href="tailwind.css">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rokkitt:wght@500;700&family=Unna:ital@1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Denver Meat Co.</title>
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="min-h-screen min-w-screen">
     <main-layout class="flex flex-1 flex-col">
-        <section class="hero mt-10 flex-col items-center justify-center text-center gap-5">
+        <section class="hero bg-linear-to-br from-gray-200 to-gray-500 min-h-screen flex flex-col items-center justify-center text-center gap-5">
             <p class="text-xl text-center">RAILROAD STREET · DENVER, PA · EST. 1969</p>
             <h1 class="text-5xl">Smoked with wood. Tied by hand.</h1>
             <h2 class="text-2xl">Ring bologna, franks and meat sticks from the same building on Railroad Street since 1969.</h2>
             <div class="flex gap-10 justify-center">
-                <a href="">
-                    <button class="bg-blue-900 text-white py-2 px-4 rounded">Find Hipper's near you</button>
+                <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                    Find Hippey 's Near You
                 </a>
-                <a href="">
-                    <button class="bg-blue-900 text-white py-2 px-4 rounded">See our meals</button>
+                <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                    See our meals
                 </a>
             </div>
+        </section>
+        <section class="proof-strips flex justify-center text-center px-50 py-20 gap-10">
+            <div class="w-50 h-60 bg-secondary text-center flex flex-col items-center justify-center">
+                <h3 class="text-xl">
+                    Since 1969
+                </h3>
+                <p class="text-xs">
+                    Same building on Railroad Street
+                </p>
+            </div>
+            <div class="w-50 h-60 bg-secondary text-center flex flex-col items-center justify-center    ">
+                <h3 class="text-xl">
+                    Real hickory
+                </h3>
+                <p class="text-xs">
+                    Smoked over wood in our own smokehouse.
+                </p>
+            </div>
+            <div class="w-50 h-60 bg-secondary text-center flex flex-col items-center justify-center">
+                <h3 class="text-xl">
+                    Tied by hand
+                </h3>
+                <p class="text-xs">
+                    Every ring bologna casing, still by hand.
+                </p>
+            </div>
+        </section>
+        <section class="the-smokehouse flex items-center justify-center px-50 py-20 gap-10">
+            <div class="w-100 h-75 bg-linear-to-br from-gray-200 to-gray-500"></div>
+            <div class="copy flex flex-col gap-2">
+                <h3 class="text-xl">
+                    HOW WE MAKE IT
+                </h3>
+                <h2 class="text-3xl">
+                    Some smoked meat is smoked with a liquid. Ours is smoked with wood.
+                </h2>
+                <p class="text-xs">
+                    Our body comes from Dillsburg and our pork from Souderton. <br/>
+                    We stuff it, tie every casing by hand, and smoke it over real hickory in <br/>
+                    the same building we've used since 1969. It takes longer, and you can <br/>
+                    taste the difference.
+                </p>
+                <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                    See how we make it
+                </a>
+            </div>
+
         </section>
     </main-layout>
 </body>
