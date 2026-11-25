@@ -4,33 +4,33 @@ class MainLayout extends HTMLElement {
 
         this.innerHTML = `
             <header>
-                <nav id="navbar" class="top-0 left-0 z-50 w-full bg-transparent transition-colors duration-300 ease-in-out flex flex-col items-center justify-center gap-3 mb-3">
-                    <div class="top-bar flex text-lg text-center mt-5 gap-5">
+                <nav id="navbar" class="top-0 left-0 z-50 w-full bg-cream transition-colors duration-300 ease-in-out flex flex-col items-center justify-center gap-3">
+                    <div class="border-y border-navy w-full max-w-275 flex font-secondary text-xl items-center justify-center text-center mt-5 gap-5 py-3">
                         <h4>Call 717-336-6577</h4>
-                        <h4>Contact</h4>
+                        <h4 class="hover:text-rust uppercase">Contact</h4>
                     </div>
-                    <div class="bot-bar flex items-center justify-center gap-5">
-                        <a href="/" class="logo text-2xl font-bold">
-                            LOGO
-                        </a>
-                        <div class="menu flex text-center gap-5 text-lg">
-                            <a href="#our-story">
-                                <h3 class="">Our Story</h3>
+                    <a href="/" class="w-65 max-w-[70vw]">
+                        <img src="https://denvermeats.com/wp-content/uploads/2026/11/denver_meat_co_hippeys_transparent.png" alt="Denver Meat Co. — Hippey's">
+                    </a>
+                    <div class="border-y border-navy w-full max-w-275 flex items-center justify-center text-xl font-secondary uppercase gap-5 py-3">
+                        <div class="menu flex text-center gap-5">
+                            <a href="#our-story" class="hover:text-rust">
+                                <h3>Our Story</h3>
                             </a>
-                            <a href="#how-we-make-it">
+                            <a href="#how-we-make-it" class="hover:text-rust">
                                 <h3>How We Make It</h3>
                             </a>
-                            <a href="#our-meats">
+                            <a href="#our-meats" class="hover:text-rust">
                                 <h3>Our Meats</h3>
                             </a>
-                            <a href="#recipes">
+                            <a href="#recipes" class="hover:text-rust">
                                 <h3>Recipes</h3>
                             </a>
-                            <a href="#for-retailers">
+                            <a href="#for-retailers" class="hover:text-rust">
                                 <h3>For Retailers</h3>
                             </a>
                         </div>
-                        <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                        <a href="" class="btn bg-navy text-white py-2 px-4 rounded">
                             Where to Buy
                         </a>
                     </div>

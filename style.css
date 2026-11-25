@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-    --color-bg: #F8F4EC;
-    --color-text: #333;
-    --color-primary: #0B2D5B;
-    --color-secondary: #B8544A;
-    --color-accent: #E8DCC6;
+    --color-navy: #0F2240;
+    --color-cream: #F5EEDF;
+    --color-parchment: #EADFC8;
+    --color-rust: #B4500F;
+    --color-charcoal: #2A2622;
+
+    --font-heading: "Alfa Slab One", serif;
+    --font-secondary: "Rokkitt", serif;
+    --font-body: "Unna", Georgia, serif;
 }
 
 body {
     background-color: var(--color-bg);
-    color: var(--color-text);
-    font-family: 'Inter', sans-serif;
+    color: var(--color-charcoal);;
+    font-family: 'Unna', Georgia, sans-serif;
 }

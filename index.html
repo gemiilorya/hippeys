@@ -3,65 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="layout.js" defer></script>
-    <!-- <script src="navbar.js" defer></script> -->
-    <link rel="stylesheet" href="tailwind.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rokkitt:wght@500;700&family=Unna:ital@1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/layout.js" defer></script>
+    <script src="js/head.js" defer></script>
     <title>Denver Meat Co.</title>
 </head>
 <body class="min-h-screen min-w-screen">
     <main-layout class="flex flex-1 flex-col">
         <section class="hero bg-linear-to-br from-gray-200 to-gray-500 min-h-screen flex flex-col items-center justify-center text-center gap-5">
-            <p class="text-xl text-center">RAILROAD STREET · DENVER, PA · EST. 1969</p>
-            <h1 class="text-5xl">Smoked with wood. Tied by hand.</h1>
-            <h2 class="text-2xl">Ring bologna, franks and meat sticks from the same building on Railroad Street since 1969.</h2>
+            <p class="text-xl text-center text-rust font-secondary mb-10">RAILROAD STREET · DENVER, PA · EST. 1969</p>
+            <h1 class="text-8xl text-navy font-heading leading-30">Smoked with wood. <br/> Tied by hand.</h1>
+            <h2 class="text-2xl italic">Ring bologna, franks and meat sticks from the same building on Railroad Street since 1969.</h2>
             <div class="flex gap-10 justify-center">
-                <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                <a href="" class="btn bg-navy text-white py-2 px-4 rounded">
                     Find Hippey 's Near You
                 </a>
-                <a href="" class="btn bg-primary text-white py-2 px-4 rounded">
+                <a href="" class="btn bg-navy text-white py-2 px-4 rounded">
                     See our meals
                 </a>
             </div>
         </section>
-        <section class="proof-strips flex justify-center text-center px-50 py-20 gap-10">
+        <section class="bg-cream flex justify-center text-center px-50 py-20 gap-10">
             <div class="text-center flex flex-col items-center justify-center gap-5">
-                <h3 class="text-xl">
+                <h3 class="text-5xl text-rust font-heading">
                     Since 1969
                 </h3>
-                <p class="text-xs">
+                <p class="text-lg">
                     Same building on Railroad Street
                 </p>
             </div>
             <div class="vl border-l-2 border-gray-200 h-50 mx-2"></div>
             <div class="text-center flex flex-col items-center justify-center gap-5">
-                <h3 class="text-xl">
+                <h3 class="text-5xl text-rust font-heading">
                     Real hickory
                 </h3>
-                <p class="text-xs">
+                <p class="text-lg">
                     Smoked over wood in our own smokehouse.
                 </p>
             </div>
             <div class="vl border-l-2 border-gray-200 h-50 mx-2"></div>
             <div class="text-center flex flex-col items-center justify-center gap-5">
-                <h3 class="text-xl">
+                <h3 class="text-5xl text-rust font-heading">
                     Tied by hand
                 </h3>
-                <p class="text-xs">
+                <p class="text-lg">
                     Every ring bologna casing, still by hand.
                 </p>
             </div>
         </section>
-        <section class="the-smokehouse flex items-center justify-center px-50 py-20 gap-10">
-            <div class="w-100 h-75 bg-linear-to-br from-gray-200 to-gray-500"></div>
-            <div class="copy flex flex-col gap-3">
-                <h3 class="text-xl">
+        <section class="bg-cream flex items-center justify-center px-50 py-20 gap-10">
+            <div class="w-75 h-100 bg-linear-to-br from-gray-200 to-gray-500"></div>
+            <div class="copy flex flex-col gap-3 mt-15">
+                <h3 class="text-xl text-rust font-secondary">
                     HOW WE MAKE IT
                 </h3>
-                <h2 class="text-3xl">
+                <h2 class="text-5xl w-2xl text-navy font-heading">
                     Some smoked meat is smoked with a liquid. Ours is smoked with wood.
                 </h2>
-                <p class="text-xs">
+                <p class="text-lg">
                     Our body comes from Dillsburg and our pork from Souderton. <br/>
                     We stuff it, tie every casing by hand, and smoke it over real hickory in <br/>
                     the same building we've used since 1969. It takes longer, and you can <br/>
@@ -72,56 +70,55 @@
                 </a>
             </div>
         </section>
-        <section class="the-meats flex flex-col items-center justify-center px-50 py-20 gap-10">
-            <h2 class="text-4xl text-center font-bold">
+        <section class="bg-cream   flex flex-col items-center justify-center px-50 py-20 gap-10">
+            <h2 class="text-5xl text-center font-heading text-navy">
                 The meats
             </h2>
-            <p class="text-xs text-center">
+            <p class="text-xl text-center font-secondary text-rust">
                 Three of the top four franks in the country — The Daily Meal, July 2025
             </p>
             <div class="flex gap-10">
-                <a href="">
-                    <div class="bg-secondary w-50 h-75 rounded flex items-center justify-center flex-col gap-2">
-                        <h3 class="text-xl">Ring Bologna</h3>
-                        <div class="w-45 h-30 rounded bg-linear-to-br from-gray-200 to-gray-500"></div>
-                        <p class="text-xs text-center px-4">
+                <a href="#">
+                    <div class="bg-white border border-charcoal/20 w-75 h-110 flex items-center justify-center flex-col gap-2">
+                        <div class="w-65 h-65 bg-linear-to-br from-gray-200 to-gray-500"></div>
+                        <h3 class="text-2xl font-secondary text-navy font-bold uppercase">Ring Bologna</h3>
+                        <p class="text-lg text-center px-4">
                             Horseshoe-shaped and hickory-smoked. Original, Garlic, Jalapeño & Cheese, Honey.
                         </p>
                     </div>
                 </a>
-                <a href="">
-                    <div class="bg-secondary w-50 h-75 rounded flex items-center justify-center flex-col gap-2">
-                        <h3 class="text-xl">Franks</h3>
-                        <div class="w-45 h-30 rounded bg-linear-to-br from-gray-200 to-gray-500"></div>
-                        <div class="flex gap-3">
-                            <span class="badge rounded-full bg-primary text-white px-2 py-1 text-xs">#1</span>
-                            <span class="badge rounded-full bg-primary text-white px-2 py-1 text-xs">#2</span>
-                            <span class="badge rounded-full bg-primary text-white px-2 py-1 text-xs">#3</span>
-                        </div>
-                        <p class="text-xs text-center">in the U.S.</p>
-                        <p class="text-xs text-center px-4">
+                <a href="#">
+                    <div class="bg-white border border-charcoal/20 w-75 h-110 flex items-center justify-center flex-col gap-2">
+                        <div class="w-65 h-65 bg-linear-to-br from-gray-200 to-gray-500"></div>
+                        <h3 class="text-2xl font-secondary text-navy font-bold uppercase">Franks</h3>
+                        <p class="text-lg text-center">#1, #2, #3 in the U.S.</p>
+                        <p class="text-lg text-center px-4">
                             Chili Cheese, Cheese, Jalapeño & Cheese and more.
                         </p>
                     </div>
                 </a>
-                <a href="">
-                    <div class="bg-secondary w-50 h-75 rounded flex items-center justify-center flex-col gap-2">
-                        <h3 class="text-xl">Meat Sticks</h3>
-                        <div class="w-45 h-30 rounded bg-linear-to-br from-gray-200 to-gray-500"></div>
-                        <p class="text-xs text-center px-4">
+                <a href="#">
+                    <div class="bg-white border border-charcoal/20 w-75 h-110 flex items-center justify-center flex-col gap-2">
+                        <div class="w-65 h-65 bg-linear-to-br from-gray-200 to-gray-500"></div>
+                        <h3 class="text-2xl font-secondary text-navy font-bold uppercase">Meat Sticks</h3>
+                        <p class="text-lg text-center px-4">
                             Snack sticks, Sweet Bologna and Hot Pepper Cheese. The 3 PM fix.
                         </p>
                     </div>
                 </a>
             </div>
         </section>
-        <section class="quote-band w-full bg-accent flex flex-col items-center justify-center">
-            <h3 class="w-6xl text-center text-2xl font-bold text-italic">
+        <section class="bg-navy text-white w-full flex flex-col items-center justify-center py-20 px-50">
+            <h3 class="w-5xl text-left text-4xl font-heading">
                 "Same building on Railroad Street since 1969. Same hickory. Casings still tied by hand. That's the whole secret."
             </h3>
-            <p class="w-6xl text-right">
+            <p class="w-5xl text-right text-2xl mt-5">
                 — Matt Forney, third generation
             </p>
+        </section>
+        <section class="w-full min-h-screen bg-cream flex flex-col">
+            <div class="w-full h-100 mt-10 bg-linear-to-br from-gray-200 to-gray-500" alt="change with actual image"></div>
+            
         </section>
     </main-layout>
 </body>
