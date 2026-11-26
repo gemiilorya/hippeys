@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Sample Customer A",
+        "product": "Ring Bologna",
+        "rating": 5,
+        "review": "Replace this with an authentic customer review."
+    },
+    {
+        "id": 2,
+        "name": "Sample Customer B",
+        "product": "Chili Cheese Franks",
+        "rating": 5,
+        "review": "Replace this with an authentic customer review."
+    },
+    {
+        "id": 3,
+        "name": "Sample Customer C",
+        "product": "Meat Sticks",
+        "rating": 4,
+        "review": "Replace this with an authentic customer review."
+    }
+]

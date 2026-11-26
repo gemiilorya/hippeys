@@ -4,7 +4,7 @@ class MainLayout extends HTMLElement {
 
         this.innerHTML = `
             <header>
-                <nav id="navbar" class="top-0 left-0 z-50 w-full bg-cream transition-colors duration-300 ease-in-out flex flex-col items-center justify-center gap-3">
+                <nav id="navbar" class="top-0 left-0 z-50 w-full bg-cream transition-colors duration-300 ease-in-out flex flex-col items-center justify-center gap-3 py-3">
                     <div class="border-y border-navy w-full max-w-275 flex font-secondary text-xl items-center justify-center text-center mt-5 gap-5 py-3">
                         <h4>Call 717-336-6577</h4>
                         <h4 class="hover:text-rust uppercase">Contact</h4>
@@ -30,7 +30,7 @@ class MainLayout extends HTMLElement {
                                 <h3>For Retailers</h3>
                             </a>
                         </div>
-                        <a href="" class="btn bg-navy text-white py-2 px-4 rounded">
+                        <a href="" class="btn bg-navy text-white py-2 px-4">
                             Where to Buy
                         </a>
                     </div>

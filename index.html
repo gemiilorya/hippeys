@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/layout.js" defer></script>
     <script src="js/head.js" defer></script>
+    <script src="js/reviews.js" defer></script>
     <title>Denver Meat Co.</title>
 </head>
 <body class="min-h-screen min-w-screen">
@@ -14,10 +15,10 @@
             <h1 class="text-8xl text-navy font-heading leading-30">Smoked with wood. <br/> Tied by hand.</h1>
             <h2 class="text-2xl italic">Ring bologna, franks and meat sticks from the same building on Railroad Street since 1969.</h2>
             <div class="flex gap-10 justify-center">
-                <a href="" class="btn bg-navy text-white py-2 px-4 rounded">
+                <a href="" class="btn bg-navy font-secondary text-xl text-white py-2 px-4">
                     Find Hippey 's Near You
                 </a>
-                <a href="" class="btn bg-navy text-white py-2 px-4 rounded">
+                <a href="" class="btn bg-navy font-secondary text-xl text-white py-2 px-4">
                     See our meals
                 </a>
             </div>
@@ -65,12 +66,12 @@
                     the same building we've used since 1969. It takes longer, and you can <br/>
                     taste the difference.
                 </p>
-                <a href="" class="btn bg-primary w-50 text-white text-center py-2 px-4 rounded">
+                <a href="" class="btn w-fit bg-navy text-white text-center py-2 px-4">
                     See how we make it
                 </a>
             </div>
         </section>
-        <section class="bg-cream   flex flex-col items-center justify-center px-50 py-20 gap-10">
+        <section class="bg-parchment   flex flex-col items-center justify-center px-50 py-20 gap-10">
             <h2 class="text-5xl text-center font-heading text-navy">
                 The meats
             </h2>
@@ -116,9 +117,185 @@
                 — Matt Forney, third generation
             </p>
         </section>
-        <section class="w-full min-h-screen bg-cream flex flex-col">
-            <div class="w-full h-100 mt-10 bg-linear-to-br from-gray-200 to-gray-500" alt="change with actual image"></div>
-            
+        <section class="w-full bg-cream flex py-20">
+            <div class="w-150 h-100 bg-linear-to-br from-gray-200 to-gray-500 mx-15" alt="change with actual image"></div>
+            <div class="flex flex-col gap-5">
+                <p class="text-xl font-secondary text-rust uppercase">
+                    this week
+                </p>
+                <h3 class="text-6xl text-navy font-heading w-lg">
+                    Slow Cooker Chili Cheese Franks
+                </h3>
+                <p class="text-xl w-100">
+                    Ranked #1 in the country by The Daily Meal, and made for a Sunday slow cooker. Six ingredients, four hours, one pot.
+                </p>
+                <a href="" class="btn w-fit bg-navy font-secondary text-xl text-white py-2 px-4">
+                    Get the recipe
+                </a>
+            </div>  
+        </section>
+        <section id="testimonials" class="bg-parchment py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12
+                        grid grid-cols-1 lg:grid-cols-3
+                        items-center gap-10 lg:gap-16">
+                <!-- Section introduction -->
+                <div class="flex flex-col gap-5">
+                    <p class="text-xl font-secondary text-rust uppercase">
+                        From our customers
+                    </p>
+                    <h2 class="text-4xl lg:text-6xl font-heading text-navy">
+                        Good meat. Good words.
+                    </h2>
+                    <p class="text-lg text-charcoal/80">
+                        See what people have to say about Hippey's.
+                    </p>
+                    <!-- Carousel navigation -->
+                    <div class="flex gap-3 mt-3">
+                        <button
+                            id="review-prev"
+                            type="button"
+                            aria-label="Previous review"
+                            class="w-12 h-12 border border-navy text-navy
+                                flex items-center justify-center
+                                hover:bg-navy hover:text-white
+                                transition-colors duration-300
+                                disabled:opacity-30
+                                disabled:cursor-not-allowed
+                                cursor-pointer">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor"
+                                stroke-width="1.5" aria-hidden="true">
+                                <path d="M19 12H5M12 19L5 12L12 5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button
+                            id="review-next"
+                            type="button"
+                            aria-label="Next review"
+                            class="w-12 h-12 border border-navy text-navy
+                                flex items-center justify-center
+                                hover:bg-navy hover:text-white
+                                transition-colors duration-300
+                                disabled:opacity-30
+                                disabled:cursor-not-allowed
+                                cursor-pointer">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor"
+                                stroke-width="1.5" aria-hidden="true">
+                                <path d="M5 12H19M12 5L19 12L12 19"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <!-- Review carousel -->
+                <div class="lg:col-span-2 min-w-0">
+                    <div
+                        id="reviews-container"
+                        tabindex="0"
+                        aria-label="Customer reviews"
+                        class="flex gap-5 overflow-x-auto
+                            snap-x snap-mandatory scroll-smooth
+                            motion-reduce:scroll-auto
+                            scrollbar-none
+                            [&::-webkit-scrollbar]:hidden">
+                        <!-- JavaScript inserts reviews here -->
+                    </div>
+                    <p id="reviews-status"
+                    class="text-sm text-charcoal/60 mt-4"
+                    role="status">
+                        Loading reviews...
+                    </p>
+                </div>
+            </div>
+            <!-- Reusable review card -->
+            <template id="review-template">
+                <article class="shrink-0 w-full
+                                md:w-[calc((100%-1.25rem)/2)]
+                                snap-start bg-white
+                                border border-charcoal/20
+                                hover:border-rust
+                                transition-colors duration-300
+                                p-6 lg:p-8 flex flex-col">
+                    <span class="font-heading text-7xl text-rust leading-none"
+                        aria-hidden="true">
+                        &ldquo;
+                    </span>
+                    <!-- Star rating -->
+                    <div data-rating
+                        class="text-rust text-xl tracking-widest mb-5">
+                    </div>
+                    <!-- Review content -->
+                    <blockquote data-review
+                                class="text-lg text-navy leading-relaxed
+                                    italic grow mb-8">
+                    </blockquote>
+                    <!-- Customer information -->
+                    <div class="flex items-center gap-4
+                                border-t border-charcoal/15 pt-5">
+                        <div data-initials
+                            aria-hidden="true"
+                            class="w-12 h-12 shrink-0 rounded-full
+                                    bg-parchment text-rust font-secondary
+                                    text-lg flex items-center justify-center">
+                        </div>
+                        <div>
+                            <h3 data-name
+                                class="font-secondary text-navy
+                                    text-lg font-bold">
+                            </h3>
+                            <p data-product
+                            class="text-sm text-charcoal/70">
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </template>
+        </section>
+        <section class="bg-cream flex items-center justify-center px-50 py-20 gap-10">
+            <div class="copy flex flex-col gap-3 mt-15">
+                <h3 class="text-xl text-rust font-secondary uppercase">
+                    where to buy
+                </h3>
+                <h2 class="text-5xl w-2xl text-navy font-heading">
+                    On the shelf at your corner store.
+                </h2>
+                <p class="text-lg w-xl">
+                    Find Hippey's at Redner's, Weis, Weaver's, Stauffer's of Kissel Hill and markets across Lancaster County. Out of state? Order online from PA General Store.
+                </p>
+                <div class="flex gap-10 text-xl">
+                    <a href="" class="w-fit btn bg-navy font-secondary text-white text-center py-2 px-4">
+                        Store list
+                    </a>
+                    <a href="" class="w-fit btn border border-navy font-secondary text-center py-2 px-4">
+                        Order online
+                    </a>
+                </div>
+            </div>
+            <div class="w-75 h-100 bg-linear-to-br from-gray-200 to-gray-500"></div>
+        </section>
+        <section class="bg-navy w-full flex py-20 items-center justify-center gap-20">
+            <div class="bg-white border border-charcoal/20 w-75 h-90 flex items-center justify-center flex-col gap-2">
+                <h3 class="text-2xl font-secondary text-navy font-bold uppercase">Factory Sale</h3>
+                <p class="text-lg text-center px-4">
+                    We open the doors a few times a year. Get the next date first.
+                </p>
+                <a href="" class="btn text-xl w-fit bg-navy font-secondary text-white text-center py-2 px-4">
+                    Notify me
+                </a>
+            </div>
+            <div class="bg-white border border-charcoal/20 w-75 h-90 flex items-center justify-center flex-col gap-2">
+                <h3 class="text-2xl font-secondary text-navy font-bold uppercase">For Retailers</h3>
+                <p class="text-lg text-center px-4">
+                    Want Hippey's in your store or deli?
+                </p>
+                <a href="" class="btn text-xl w-fit bg-navy font-secondary text-white text-center py-2 px-4">
+                    Carry Hippey's
+                </a>
+            </div>
         </section>
     </main-layout>
 </body>
